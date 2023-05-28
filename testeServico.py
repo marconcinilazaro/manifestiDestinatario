@@ -23,7 +23,7 @@ def manifestarDestinatario():
     data = request.json
     pasta_destino = '/certificado'  # Pasta de destino para salvar o arquivo
     try:
-        url =  data.get('certificado') #"https://armazenamentowebtron.blob.core.windows.net/certificados/30985777000113.pfx"
+        url =  data.get('certificado') #
         response = requests.get(url)
         if response.status_code == 200:
             # Verifica se a pasta de destino existe, caso contrário, cria-a
@@ -39,11 +39,11 @@ def manifestarDestinatario():
         else:
             print(f'Falha ao baixar o arquivo. Código de status: {response.status_code}')
             
-        senha =  data.get('senha') #'996637392'
+        senha =  data.get('senha') #'996
         uf =  data.get('uf')#'AN'
         homologacao = False
-        cnpj =  data.get('cnpj') #'30985777000113' 
-        chave =  data.get('chave') #'51210275315333002829550010015253571017410061'
+        cnpj =  data.get('cnpj') #'3098 
+        chave =  data.get('chave') #'5121027531533300282
         modelo = data.get('modelo') # modelo='nfce' ou 'nfe'
         operacao = data.get('operacao')   #2- numero da operacao
         manif_dest = EventoManifestacaoDest(
