@@ -7,15 +7,15 @@ import datetime
 from lxml import etree
 
 certificado =  "D:\sefazpy\certificado.pfx"
-senha = '996637392'
+senha = '997392'
 uf = 'mt'
 homologacao = False
-CNPJ = '30985777000113' 
-CHAVE = '51230542188988000104550010000000231339045001'
+CNPJ = '309857713' 
+CHAVE = '5123054218800231339045001'
 
 manif_dest = EventoManifestacaoDest(
-	cnpj='30985777000113',  # cnpj do destinatário
-	chave='51230542188988000104550010000000231339045001', # chave de acesso da nota
+	cnpj='309800113',  # cnpj do destinatário
+	chave='5123054218898000231339045001', # chave de acesso da nota
 	data_emissao=datetime.datetime.now(),
 	uf='AN',
 	operacao=2  # - numero da operacao
